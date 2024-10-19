@@ -56,7 +56,7 @@ void main() {
 			}
 		}
 	}
-	return 0;
+	return 0; 
 }
 
 int getIntInput(const char message[]) {
@@ -71,24 +71,26 @@ int getIntInput(const char message[]) {
 	return input;
 }
 
-void setLength(int input, int *length) {
+
+
+void setLength(int input, int* length) {
 	if (input >= 0 && input < 100) {
 		*length = input;
 	}
 }
 
-void setWidth(int input, int *width) {
+void setWidth(int input, int* width) {
 	if (input >= 0 && input < 100) {
 		*width = input;
 	}
 }
 
 int static getPerimeter(int length, int width) {
-	int perimeter = 2 * (length + width); 
+	int perimeter = 2 * (length + width);
 	return perimeter;
 }
 
-int getArea(int *length, int *width) {
+int getArea(int* length, int* width) {
 	int area = (*length) * (*width);
 	return area;
 }
@@ -96,13 +98,13 @@ int getArea(int *length, int *width) {
 int Add(int x, int y) {
 
 	int Sum = 0;
-	Sum = x + y; 
-	return Sum; 
+	Sum = x + y;
+	return Sum;
 }
 
 int Multiply(int a, int b) {
 
-	int Product = 0; 
+	int Product = 0;
 	Product = (a) * (b);
 	return Product;
 }
